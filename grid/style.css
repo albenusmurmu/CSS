@@ -1,0 +1,98 @@
+/* 
+!CSS Grid//(IT'S MUST BE USE WHEN THE ROW AND COLUMNS BOTH CAN BE REQUIRED AT A TIME)
+
+ Setting a continer's display to grid will make all children 
+
+  --> container{
+    display grid;
+ }
+
+!LEARN :-
+FOR FLEX or GRID ITEMS ONLY WORKS FOR DIRECT CHILDREN //SEE VIDEO WHEN DOUBT
+
+!1):- Grid Template
+      They define the lines & track sizing
+
+    * --> grid-template-rows
+    * --> grid-template-columns
+
+     *--> grid-template-rows:repeat(count, 1fr)
+     *--> grid-template-column:repeat(count, 1fr)
+
+
+     !2):- Grid Gaps
+               They define the gaps between the lines
+               
+             *  --> Row-gap: 10px;
+              * --> column-gap
+               or
+              * grid-gap:rowGap columnGap
+      
+      !3):- Grid-columns
+                Define an item's starting & ending position inside the column
+               * --> grid-column-start:line_number
+               * --> grid-column-end:line_number
+                or
+               * -->grid-column:start_col/end_col
+               * -->grid-column:start_col/span number
+        
+       !4):- Grid-rows
+                Define an item's starting & ending position inside the column
+               * --> grid-row-start:line_number
+               * --> grid-row-end:line_number
+                or
+                *-->grid-row:start_col/end_col
+                *-->grid-row:start_col/span number
+
+        !5):- GRID PROPERTIES
+            
+        *--> justify-items (container) <--
+                                         !|-> Horizontal
+       * --> justify-self  (item)     <---
+
+        *--> align-items (container) <--
+                                       !|-> Vertical
+        *--> align-self  (item)     <---
+          or
+          *--> place-items       
+          *--> place-self
+          
+         
+
+*/
+
+#container{
+    width: 600px;
+    height: 300px;
+    background-color: rgb(222, 119, 22);
+    /* display: grid; */
+    display: inline-grid;
+    /* grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-template-columns: 100px 100px 100px 100px 100px; */
+    /* grid-template-columns: repeat(4,1fr); //we can write also*/
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr; */
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 10px;
+    /* row-gap: 10px; */
+    /* grid-gap: 10px ; */
+    /* justify-items: center;
+    align-items: end; */
+    place-items: center;
+}
+.class{
+    width: 100px;
+    height: 50px;
+    background-color:aquamarine;
+    text-align: center;
+    border: 2px solid yellowgreen;
+}
+.one{
+    /* grid-column-start: 1 ;
+    grid-column-end: 3; */
+    /* grid-column: 1/5; */
+    /* grid-column: 1/span 4; */
+    /* justify-self: end; */
+    /* align-self: flex-start; */
+    place-self: start;
+}
