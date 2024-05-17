@@ -1,0 +1,69 @@
+/* 
+   !Media queries
+   * THERE ARE TWO TYPES OF MEDIA QUERIES 
+     1) LANDSCAPE
+     2) PORTRAIT
+   media-feature-width(of viewport)  
+    
+   * @media (width:200px) {
+    div{
+        backgournd-color:red;
+        
+    }
+    h1{
+        background-color:red;
+    }
+
+    ! Comprativly-more use
+    * @media (max-width:400px) //it is means that the maximum value is 0px to 400px 
+    {
+        div{
+            background-color:blue;
+        }
+        h1{
+            background-color:blue;
+        }
+    }
+    * @media (min-width:400px) //it is means that the minimum value is 400px and no maximum limit
+    { 
+        div{
+            background-color:blue;
+        }
+        h1{
+            background-color:blue;
+        }
+    }
+*/
+
+h1{
+    height:50px;
+    background-color: red;
+}
+@media(max-width:500px){
+    h1{
+        background-color: #ff00ff;
+        color:#ffffff;
+    }
+    div{
+        height:70px;
+        color:blueviolet;
+        background-color: rgb(124, 107, 107);
+    }
+}
+
+@media(min-width:400px){
+    h1{
+        background-color:rgb(70, 39, 39)
+    }
+}
+
+@media(min-width:200px) and (max-width:300px){
+    h1{
+        background-color: chartreuse;
+    }
+}
+@media(orientation:landscape){
+    h1{
+        background-color: aqua;
+    }
+}
