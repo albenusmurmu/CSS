@@ -1,0 +1,73 @@
+/*    
+! CSS ANIMATIONS
+To Animate CSS elements
+
+* @keyframes myName {
+ from 
+ { font-size:20px;}
+ to 
+ { font-size:40px;}
+}
+or
+% in Animation 
+
+@keyframes myName {
+    0%{font-size:20px;}
+    50%{font-size:30px;}
+    100%{font-size:40px;}
+
+ */
+
+
+
+#container{
+    height:100px;
+    width: 50%;
+    background-color: red;
+
+    /* animation-name: widthAnimate;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count:infinite;
+    animation-direction: normal; */
+    /* *in one line */
+     animation: widthAnimate 4s ease-in-out 0s infinite normal
+
+
+
+}
+    @keyframes widthAnimate{
+        /* from{
+            width:0px;
+            background-color: red;
+
+        }
+        to{
+            width:300px;
+            border-radius: 10px;
+            background-color: green;
+            font-size: 60px;
+        } */
+
+        0%{
+            width:0px;
+            background-color: red;
+        }
+         50%{
+            background-color: #ffff00;
+         }
+         80%{
+            background-color: darkcyan;
+         }
+
+         100%{
+            /* width:300px; */
+            border-radius: 10px;
+            background-color: green;
+            font-size: 60px;
+        
+    }
+
+
+}
