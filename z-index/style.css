@@ -1,0 +1,41 @@
+/* 
+! z-index
+ it decides the stack level of elements
+
+ Overlapping elements with the larger z-index cover those with a smaller one
+
+* z-index:auto(0)
+* z-index:1/2/...
+* z-index:-1/-2/...
+*  // Z-index PROPERTI ONLY WORKS WHEN WE SE SET THE " POSITION= RELATIVE , IT NOT WORKS WHEN WE SE SET THE " POSITION=STATIC AND DEFAULT, 
+*/
+
+#red{
+    background-color: red;
+    height: 100px;
+    width: 200px;
+    border:2px solid #000000;
+    /* margin: 50px; */
+    position: relative;
+    /* z-index: 1; */
+}
+
+#blue{
+    background-color: blue;
+    height: 100px;
+    width: 200px;
+    border:2px solid #000000;
+    position: relative;
+    bottom: 50px;
+    left: 180px;
+    /* margin: 50px; */
+    z-index: 1;
+     
+}
+#green{
+    background-color: green;
+    height: 100px;
+    width: 200px;
+    border:2px solid #000000;
+    /* margin: 50px; */
+}
